@@ -1,0 +1,88 @@
+<h1>Basic Tags</h1>
+
+<h2>Headings</h2>
+
+<p>Provide hierarchical semantics to html documents</p>  
+
+<code>&lt;h1&gt;heading 1&lt;/h1&gt;</code><br/>
+<code>&lt;h2&gt;heading 2&lt;/h2&gt;</code><br/>
+<code>&lt;h3&gt;heading 3&lt;/h3&gt;</code><br/>
+<code>&lt;h4&gt;heading 4&lt;/h4&gt;</code><br/>
+<code>&lt;h5&gt;heading 5&lt;/h5&gt;</code><br/>
+<code>&lt;h6&gt;heading 6&lt;/h6&gt;</code><br/>
+
+<h2>Paragraph</h2>
+
+<p>Paragraphs are placed inside <code>&lt;p&gt;paragraph text&lt;/p&gt;</code> tags</p>
+
+<h2>Comments</h2>
+
+<p>Comments start with <code>&lt;!--</code> and end with <code>--&gt;</code></p>
+
+<code>
+    &lt;!-- this is a comment --&gt;<br/>
+    &lt;!-- this is a comment<br/>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;over multiple lines --&gt;
+</code>
+
+<h2>Structure</h2>
+
+<p>html 5 introduced new tags that give semantic structure to documents</p>
+
+<code>&lt;main&gt;&lt;/main&gt;</code><br/>
+<code>&lt;header&gt;&lt;/header&gt;</code><br/>
+<code>&lt;footer&gt;&lt;/footer&gt;</code><br/>
+<code>&lt;nav&gt;for navigation&lt;/nav&gt;</code><br/>
+<code>&lt;article&gt;&lt;/article&gt;</code><br/>
+<code>&lt;section&gt;&lt;/section&gt;</code><br/>
+
+<p>and more.</p>
+
+<h2>Images</h2>
+
+<p>to add images use <code>&lt;img&gt;</code> tag. For example <br/>
+<code>&lt;img src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/relaxing-cat.jpg" alt="a cute upside-down kitten"&gt;</code><br/>
+Note: the tag is self closing; the src attribute tells the browser where to find the image; 
+and, the alt attribute is used to specify the alternate text for an image. 
+It is useful when an image cannot be displayed and for screen readers.</p>
+
+<h2>Links</h2>
+
+<p>Link to other pages with the anchor tag: <br/>
+<code>&lt;a href="https://www.freecatphotoapp.com"&gt;freeCodeCamp&lt;/a&gt;</code><br/>
+the href attribute provides the address to link to. It can also be used to link internally:<br/>
+<code>&lt;span id="destination"&gt;Jump to here&lt;/span&gt;&lt;a href="#destination"&gt;Jump from here&lt;/a&gt;</code><br/>
+Or, a hash on its own will create a dead link:<br/>
+<code>&lt;a href="#"&gt;Dead link&lt;/a&gt;</code><br/>
+You can nest other elements, like images, inside anchor tags to make the the nested element into a hyperlink<br/>
+<code>&lt;a href="#"&gt;&lt;img src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/relaxing-cat.jpg" alt="a cute upside-down kitten"&gt;&lt;/a&gt;</code></p>
+
+<h2>Lists</h2>
+
+<h3>Unordered lists</h3>
+
+<p>Create bullet lists. Can be nested to give sub bullets</p>
+
+<code>
+&lt;ul&gt;<br/>
+&nbsp;&nbsp;&nbsp;&lt;li&gt;item 1&lt;/li&gt;<br/>
+&nbsp;&nbsp;&nbsp;&lt;li&gt;item 2&lt;/li&gt;<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;ul&gt;<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;item 3a&lt;/li&gt;<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;item 3b&lt;/li&gt;<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/ul&gt;<br/>
+&nbsp;&nbsp;&nbsp;&lt;li&gt;item 4&lt;/li&gt;<br/>
+&lt;/ul&gt;
+</code>
+
+<h3>Ordered lists</h3>
+
+<p>Create numbered lists.</p>
+
+<code>
+&lt;ol&gt;<br/>
+&nbsp;&nbsp;&nbsp;&lt;li&gt;item 1&lt;/li&gt;<br/>
+&nbsp;&nbsp;&nbsp;&lt;li&gt;item 2&lt;/li&gt;<br/>
+&nbsp;&nbsp;&nbsp;&lt;li&gt;item 3&lt;/li&gt;<br/>
+&lt;/ol&gt;
+</code>
